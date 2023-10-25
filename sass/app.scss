@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+$font-family-sans-serif:'Inter', sans-serif;
+$font-weight-bold:700;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 7,
+);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.wrapper{
+    background-color: hsl(244, 38%, 16%);
+   
+
+}
+.main-heading{
+    color:hsl(0, 0%, 100%);
+    
+}
+.insight{
+    color:hsl(277, 64%, 61%)
+}
+
+.main-para{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.stat-heading{
+    color:hsl(0, 0%, 100%);
+}
+.stat-status{
+    color:hsla(0, 0%, 100%, 0.6);
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    
+    
+}
+.img::after{
+    position: absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    background-color:hsl(277, 64%, 61%);
+    top:0;
+    left:0;
+    opacity: 0.6;
+    
+    
+    
+}
+.desktop-img{
+    display: block;
+    
+}
+.mobile-img{
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .desktop-img{
+        display:none;
+    }
+    .mobile-img{
+        display:block;
+        width:100%;
+    }
+    .wrapper{
+        background-color: hsl(244, 38%, 16%);
+
+    }}
+    
